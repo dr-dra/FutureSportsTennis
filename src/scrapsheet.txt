@@ -1,0 +1,94 @@
+//import React from "react";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Import Routes
+import NavBar from "./components/NavBar";
+import About from "./pages/About";
+import BookaCourt from "./pages/BookCourt";
+import Coaching from "./pages/Coaching";
+import Leagues from "./pages/Leagues";
+import ContactUs from "./pages/ContactUs";
+import "./index.css";
+function App() {
+  return (
+    <Router>
+      <div>
+        <NavBar />
+        <Routes>
+          {" "}
+          {/* Wrap Routes around Route components */}
+          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/bookacourt" element={<BookaCourt />} />
+          <Route path="/coaching" element={<Coaching />} />
+          <Route path="/leagues" element={<Leagues />} />
+          <Route path="/contactus" element={<ContactUs />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
+
+
+
+
+
+
+
+
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles.css";
+
+const NavBar = () => {
+  return (
+    <nav>
+      <div className="logo"></div>
+      <img className="ml-30" src="/logo.png" alt="Logo" width="200px" />
+      <div className="menu">
+        <ul className="links">
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <li>
+            <Link to="/bookacourt">Book a Court</Link>
+          </li>
+          <li>
+            <Link to="/coaching">Coaching</Link>
+          </li>
+          <li>
+            <Link to="/leagues">Leagues</Link>
+          </li>
+          <li>
+            <Link to="/contactus">Contact Us</Link>
+          </li>
+          <li>
+            <span>&nbsp;</span>
+          </li>
+          <li>
+            <div className="search-box">
+              <form>
+                <input type="text" placeholder="Search" />
+                <button id="search" className="bgGreen" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div className="trigram">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  );
+};
+
+export default NavBar;
