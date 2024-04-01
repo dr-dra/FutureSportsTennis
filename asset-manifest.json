@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/FutureSportsTennis/static/css/main.1e359328.css",
+    "main.js": "/FutureSportsTennis/static/js/main.251461ca.js",
+    "static/media/image4.jpg": "/FutureSportsTennis/static/media/image4.ef7da6ee5768eb05e66a.jpg",
+    "static/media/image1.jpg": "/FutureSportsTennis/static/media/image1.ed68eba25afad9c6f53f.jpg",
+    "static/media/image2.jpg": "/FutureSportsTennis/static/media/image2.c262aa75cfd4805bf438.jpg",
+    "static/media/image3.jpg": "/FutureSportsTennis/static/media/image3.a6a6f97919ffa2f0212a.jpg",
+    "index.html": "/FutureSportsTennis/index.html",
+    "main.1e359328.css.map": "/FutureSportsTennis/static/css/main.1e359328.css.map",
+    "main.251461ca.js.map": "/FutureSportsTennis/static/js/main.251461ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1e359328.css",
+    "static/js/main.251461ca.js"
+  ]
+}
