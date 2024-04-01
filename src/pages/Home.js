@@ -1,10 +1,6 @@
 import Carousel from "../components/Carousel";
 import "../styles.css";
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-
 const Home = () => {
   // Carousel:  get images from the 'src/media/home/'
   const importAll = (r) => r.keys().map(r);

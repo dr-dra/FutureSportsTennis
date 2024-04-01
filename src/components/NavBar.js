@@ -5,27 +5,12 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Modal from "react-bootstrap/Modal";
-
+import FsLogo from "../media/logo.png";
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [showModal, setShowModal] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const showSidebar = () => {
-    const sidebar = document.querySelector(".sidebar");
-    if (sidebar) sidebar.style.display = "flex";
-  };
-
-  const hideSidebar = () => {
-    const sidebar = document.querySelector(".sidebar");
-    if (sidebar) sidebar.style.display = "none";
-  };
 
   const handleSearch = () => {
     setShowModal(true);
@@ -36,7 +21,7 @@ const NavBar = () => {
       <Navbar collapseOnSelect expand="lg" className="bg-dark bg-gradient">
         <Container className="mWidth">
           <Navbar.Brand href="#home">
-            <img className="ml-30" src="/logo.png" alt="Logo" width="200px" />
+            <img className="ml-30" src={FsLogo} alt="Logo" width="200px" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">

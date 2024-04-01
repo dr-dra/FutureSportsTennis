@@ -1,10 +1,12 @@
+import TrainingVideo from "../media/tennis_training.mp4";
+
 const Coaching = () => {
   return (
     <div className="block75">
       <h2>Training and Coaching at FutureSports Tennis</h2>
       <div className="video-container">
         <video controls>
-          <source src="tennis_training.mp4" type="video/mp4" />
+          <source src={TrainingVideo} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
